@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sources":["../app/sass/globals/_fonts.scss","style.css","../app/sass/globals/_bolierplate.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;EACA,oCAAA;ACCF;;ACHA;EACE,2BAAA;ADMF","file":"style.css"}
