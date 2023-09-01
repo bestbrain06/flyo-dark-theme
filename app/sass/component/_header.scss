@@ -1,0 +1,69 @@
+@use "../util" as u;
+.hero {
+  margin-block-start: 30px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    img {
+      max-width: 60%;
+    }
+  }
+
+  &__links {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: var(--gap, 20px);
+    }
+    a {
+      font-size: 12px;
+      color: var(--white);
+      transition: opacity 300ms ease-in-out;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        margin-block-start: 1px;
+        opacity: 0;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__body {
+    margin-block-start: 54px;
+    text-align: center;
+
+    @include u.breakpoint(medium) {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+    margin-block-end: 33px;
+  }
+
+  &__content {
+    h1 {
+      margin-block-end: 26px;
+    }
+
+    button {
+      margin-block-start: 37px;
+    }
+  }
+}
