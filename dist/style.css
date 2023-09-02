@@ -149,4 +149,34 @@ a:focus {
   border: 0;
   background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
   color: var(--white);
+}
+
+.features {
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  margin-block-start: 128.5px;
+  margin-inline: auto;
+}
+@media (min-width: 46.875em) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    gap: 80px;
+  }
+}
+.features > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.features > * > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */

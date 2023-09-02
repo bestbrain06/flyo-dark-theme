@@ -1,0 +1,32 @@
+@use "../util" as u;
+
+.features {
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  margin-block-start: 128.5px;
+  margin-inline: auto;
+
+  @include u.breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    gap: 80px;
+  }
+
+  > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  > * > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
