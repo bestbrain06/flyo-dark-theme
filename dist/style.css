@@ -179,4 +179,51 @@ a:focus {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.productivity {
+  margin-block-start: 146.5px;
+}
+@media (min-width: 46.875em) {
+  .productivity {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+  }
+}
+.productivity__content {
+  margin-block-start: 56.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.productivity .flyo-works {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  color: var(--gradient-2);
+  cursor: pointer;
+}
+.productivity .flyo-works:after {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  content: "";
+  display: block;
+  width: 153px;
+  height: 2px;
+  background-color: var(--gradient-2);
+}
+.productivity .flyo-works:hover {
+  color: var(--white);
+}
+.productivity .flyo-works:hover::after {
+  background-color: var(--white);
+}
+
+.testimonial {
+  margin-block-start: 113px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }/*# sourceMappingURL=style.css.map */

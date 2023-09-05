@@ -1,0 +1,45 @@
+@use "../util" as u;
+
+.productivity {
+  margin-block-start: 146.5px;
+
+  @include u.breakpoint(medium) {
+    display: flex;
+    align-items: center;
+    gap: 87px;
+  }
+
+  &__content {
+    margin-block-start: 56.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flyo-works {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    color: var(--gradient-2);
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      content: "";
+      display: block;
+      width: 153px;
+      height: 2px;
+      background-color: var(--gradient-2);
+    }
+
+    &:hover {
+      color: var(--white);
+
+      &::after {
+        background-color: var(--white);
+      }
+    }
+  }
+}
