@@ -37,6 +37,8 @@ body {
   color: var(--white);
   background-color: var(--main-background);
   padding-inline: 20px;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 @media (min-width: 64em) {
   body {
@@ -254,4 +256,60 @@ a:focus {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.email-field {
+  background-color: var(--email-signUp-background);
+  padding: 30px;
+  text-align: center;
+  margin-block-start: 160px;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 120px;
+  left: 0;
+}
+.email-field .sign-form {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 500px) {
+  .email-field .sign-form {
+    display: flex;
+  }
+}
+.email-field .sign-form input[type=text] {
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  padding: 5px 10px;
+}
+@media (min-width: 500px) {
+  .email-field .sign-form input[type=text] {
+    width: 170%;
+  }
+}
+.email-field .sign-form input[type=button] {
+  border-radius: 20px;
+  border: 0;
+  padding: 5px 10px;
+  background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--fs-small);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--footer-background);
+  padding-block-start: 120px;
+  width: 1000vw;
+  position: relative;
+  left: -35px;
+  top: 0;
+  padding-inline: 20px;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

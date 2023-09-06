@@ -1,0 +1,49 @@
+.email-field {
+  background-color: var(--email-signUp-background);
+  padding: 30px;
+  text-align: center;
+  margin-block-start: 160px;
+  max-width: 500px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 120px;
+  left: 0;
+
+  .sign-form {
+    display: grid;
+    gap: 20px;
+
+    @media (min-width: 500px) {
+      display: flex;
+    }
+
+    input[type="text"] {
+      border-radius: 20px;
+      outline: 0;
+      border: 0;
+      padding: 5px 10px;
+
+      @media (min-width: 500px) {
+        width: 170%;
+      }
+    }
+
+    input[type="button"] {
+      border-radius: 20px;
+      border: 0;
+      padding: 5px 10px;
+      background: linear-gradient(
+        to right,
+        var(--gradient-1),
+        var(--gradient-2)
+      );
+      color: var(--white);
+      font-weight: 700;
+      font-size: var(--fs-small);
+      cursor: pointer;
+    }
+  }
+}
