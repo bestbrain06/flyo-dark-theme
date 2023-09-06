@@ -1,6 +1,41 @@
-.testimonial {
+@use "../util" as u;
+
+.testimonials {
   margin-block-start: 113px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  @include u.breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--testimonial-background);
+    padding: 40px;
+
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &__image {
+        img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+
+      &__personality {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
 }
