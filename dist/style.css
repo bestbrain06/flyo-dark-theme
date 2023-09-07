@@ -263,7 +263,7 @@ a:focus {
   padding: 30px;
   text-align: center;
   margin-block-start: 160px;
-  max-width: 500px;
+  max-width: 700px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -274,33 +274,41 @@ a:focus {
 }
 .email-field .sign-form {
   display: grid;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
 }
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .email-field .sign-form {
     display: flex;
   }
 }
-.email-field .sign-form input[type=text] {
-  border-radius: 20px;
+.email-field .sign-form__input p {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--error);
+}
+.email-field .sign-form__input input {
+  width: 300px;
   outline: 0;
   border: 0;
-  padding: 5px 10px;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-medium);
+  padding-inline-start: 20px;
+  border-radius: 30px;
+  margin-block-end: 20px;
 }
-@media (min-width: 500px) {
-  .email-field .sign-form input[type=text] {
-    width: 170%;
+@media (min-width: 600px) {
+  .email-field .sign-form__input input {
+    width: 350px;
   }
 }
-.email-field .sign-form input[type=button] {
-  border-radius: 20px;
+.email-field .sign-form .button {
+  margin-block-end: 22px;
   border: 0;
-  padding: 5px 10px;
+  border-radius: 30px;
   background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
   color: var(--white);
-  font-weight: 700;
-  font-size: var(--fs-small);
-  cursor: pointer;
+  padding: 10px 30px;
 }
 
 .footer {
