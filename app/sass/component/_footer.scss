@@ -1,10 +1,58 @@
+@use "../util" as u;
+
 .footer {
   background-color: var(--footer-background);
-  padding-block-start: 120px;
-  width: 1000vw;
+  padding-block-start: 180px;
+  width: 150vw;
   position: relative;
   left: -35px;
   top: 0;
-  padding-inline: 20px;
+  padding-inline: 50px;
   z-index: -1;
+  position: relative;
+
+  &__contact {
+    @include u.breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 350px);
+      gap: 20px;
+    }
+
+    .contact__address {
+      width: 300px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .contact__phone {
+      display: flex;
+      gap: 10px;
+      margin-block-end: 10px;
+    }
+
+    .contact__email {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  &__links {
+    @include u.breakpoint(medium) {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      position: relative;
+      top: -75px;
+      left: 600px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 20px;
+    @include u.breakpoint(medium) {
+      position: relative;
+      top: -170px;
+      left: 900px;
+    }
+  }
 }

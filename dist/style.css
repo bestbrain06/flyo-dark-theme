@@ -51,6 +51,10 @@ svg {
   max-width: 100%;
 }
 
+a {
+  color: var(--white);
+}
+
 h1,
 h2,
 h3 {
@@ -313,11 +317,53 @@ a:focus {
 
 .footer {
   background-color: var(--footer-background);
-  padding-block-start: 120px;
-  width: 1000vw;
+  padding-block-start: 180px;
+  width: 150vw;
   position: relative;
   left: -35px;
   top: 0;
-  padding-inline: 20px;
+  padding-inline: 50px;
   z-index: -1;
+  position: relative;
+}
+@media (min-width: 64em) {
+  .footer__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 20px;
+  }
+}
+.footer__contact .contact__address {
+  width: 300px;
+  display: flex;
+  gap: 10px;
+}
+.footer__contact .contact__phone {
+  display: flex;
+  gap: 10px;
+  margin-block-end: 10px;
+}
+.footer__contact .contact__email {
+  display: flex;
+  gap: 10px;
+}
+@media (min-width: 64em) {
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    position: relative;
+    top: -75px;
+    left: 600px;
+  }
+}
+.footer__icons {
+  display: flex;
+  gap: 20px;
+}
+@media (min-width: 64em) {
+  .footer__icons {
+    position: relative;
+    top: -170px;
+    left: 900px;
+  }
 }/*# sourceMappingURL=style.css.map */
