@@ -1,3 +1,5 @@
+@use "../util" as u;
+
 .email-field {
   background-color: var(--email-signUp-background);
   padding: 30px;
@@ -12,6 +14,10 @@
   top: 120px;
   left: 0;
   margin-inline: 30px;
+
+  @include u.breakpoint(medium) {
+    margin-inline: auto;
+  }
 
   .sign-form {
     display: grid;

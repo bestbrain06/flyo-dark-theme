@@ -103,7 +103,7 @@ a:focus {
   gap: var(--gap, 20px);
 }
 .hero__links a {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--white);
   transition: opacity 300ms ease-in-out;
 }
@@ -279,6 +279,11 @@ a:focus {
   top: 120px;
   left: 0;
   margin-inline: 30px;
+}
+@media (min-width: 64em) {
+  .email-field {
+    margin-inline: auto;
+  }
 }
 .email-field .sign-form {
   display: grid;
