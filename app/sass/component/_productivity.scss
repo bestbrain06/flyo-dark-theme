@@ -2,11 +2,13 @@
 
 .productivity {
   margin-block-start: 146.5px;
+  margin-inline: 30px;
 
   @include u.breakpoint(medium) {
     display: flex;
     align-items: center;
     gap: 87px;
+    margin-inline: 60px;
   }
 
   &__content {

@@ -14,13 +14,7 @@ body {
   font-weight: var(--fw-400);
   color: var(--white);
   background-color: var(--main-background);
-  padding-inline: 20px;
   line-height: 1.7;
-  overflow-x: hidden;
-
-  @include u.breakpoint(medium) {
-    padding-inline: 40px;
-  }
 }
 
 img,

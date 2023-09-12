@@ -1,6 +1,10 @@
 @use "../util" as u;
 .hero {
   margin-block-start: 30px;
+  margin-inline: 30px;
+  @include u.breakpoint(medium) {
+    margin-inline: 60px;
+  }
 
   &__header {
     display: flex;

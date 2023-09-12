@@ -5,10 +5,12 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-inline: 30px;
 
   @include u.breakpoint(medium) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-inline: 60px;
   }
 
   .testimonial {
